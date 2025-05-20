@@ -1,0 +1,244 @@
+* {
+    margin: 0; /* Tüm elementlerin dış boşluklarını sıfırlar */
+    padding: 0; /* Tüm elementleriniç boşluklarını sıfırlar */
+    box-sizing: border-box; /* Padding ve border'ı toplam genişliğe dahil eder */
+    font-family: 'Segoe UI', sans-serif; /* Sayfadaki yazı tipi ailesini belirler */
+}
+ 
+body {
+    background-color: #f9f9f9; /* Sayfa arka plan rengi */
+    color: #333; /* Metin rengi*/
+}
+ 
+header {
+    background-color: #003366; /* Header arka plan rengi */
+    color: #fff; /* Header içindeki yazı rengi */
+    padding: 20px 40px; /* Üst-alta 20px, sağ-sola 40px boşluk ekler */
+    display: flex; /* Flexbox ile öğeleri yatay düzlemde hizalar */
+    justify-content: space-between; /* Öğeleri sağa ve sola yaslar */
+    align-items: center; /* Öğeleri dikeyde ortalar */
+    position: fixed; /* Header’ı sayfanın en üstüne sabitler */
+    z-index: 1000; /* Diğer öğelerin üstünde görünmesini sağlar */
+    top: 0; /* Yukarıdan 0 boşluk bırakır */
+    left: 0; /* Soldan 0 boşluk bırakır */
+    width: 100%; /* Tüm genişliği kaplar */
+   
+}
+ 
+body {
+    padding-top: 80px; /* Header sabit olduğu için içerik üstüne binmesin diye üst boşluk bırakır */
+}
+ 
+header h1 {
+    font-size: 2.2em; /* Başlığın yazı boyutu*/
+}
+ 
+nav ul {
+    list-style: none; /* Liste işaretlerini kaldırır */
+    display: flex; /* Menü öğelerini yatay hizalar */
+    gap: 20px; /* Menü öğeleri arasında boşluk */
+}
+ 
+nav a {
+    color: #fff; /* Menü bağlantılarının rengi */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    font-weight: 500; /* Yazı kalınlığını orta yapar */
+    transition: color 0.3s; /* Renk değişimi süresi */
+}
+ 
+nav a:hover {
+    color: #ffcc00; /* Üzerine gelince bağlantının rengi*/
+}
+ 
+.search-container {
+    background: url('img/pexels-vincent-gerbouin-445991-1174732.jpg') no-repeat center center/cover; /* Arka plan resmi */
+    padding: 80px 20px; /* Üst-alta 80px, sağ-sola 20px boşluk bırakır */
+    text-align: center; /* İçeriği ortalar */
+    color: white; /* Yazı rengi*/
+   
+}
+ 
+ 
+ 
+ 
+.search-container input[type="text"] {
+    padding: 15px 20px; /* İç boşluk */
+    width: 300px; /* Genişlik */
+    font-size: 16px; /* Yazı boyutu*/
+}
+ 
+.search-container button {
+    padding: 15px 30px; /* İç boşluk */
+    margin-left: 10px; /* Sol boşluk */
+    border: none; /* Kenarlık yok */
+    background-color: #ffcc00; /* Sarı arka plan */
+    color: #000; /* Yazı rengi siyah */
+    font-weight: bold; /* Yazı kalınlığı */
+    cursor: pointer; /* Üzerine gelince el işareti çıkar */
+   
+}
+ 
+#aramabutonu:hover {
+    background-color: chocolate; /* Arka plan rengi */
+    transform: rotate(998deg); /*döndürme efekti */
+    transition: 5s; /*geçiş süresi */
+}
+ 
+ 
+ 
+.hero {
+    text-align: center; /* İçeriği ortalar */
+    padding: 60px 20px; /* İç boşluklar */
+    background-color: #e0f7fa; /* Açık mavi arka plan */
+}
+ 
+.hero h2 {
+    font-size: 2.5em; /* Başlık yazı boyutu */
+    margin-bottom: 10px; /* Alt boşluk */
+    color: #006064; /* Başlık rengi koyu mavi */
+}
+ 
+.hero p {
+    font-size: 1.2em; /* Paragraf boyutu */
+    margin-bottom: 20px; /* Alt boşluk */
+    color: #00796b;
+}
+ 
+.button {
+    padding: 12px 25px; /* Buton iç boşluğu */
+    background-color: #00796b; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi*/
+    border: none; /* Kenarlık yok */
+    text-decoration: none; /* Alt çizgi yok */
+    transition: background-color 0.3s; /* Arka plan geçişi */
+}
+ 
+.button:hover {
+    background-color: #004d40; /* Hover olunca daha koyu renk */
+}
+ 
+section {
+    padding: 60px 40px; /* İçerik alanı boşlukları */
+}
+ 
+section h2 {
+    font-size: 2em; /* Başlık boyutu */
+    margin-bottom: 30px; /* Alt boşluk */
+    text-align: center; /* Ortalanmış başlık */
+    color: #003366; /* Koyu mavi renk */
+}
+ 
+.otel-items {
+    display: flex; /* Öğeleri yan yana dizer */
+    flex-wrap: wrap; /* Taşarsa alt satıra geçirir */
+    gap: 20px; /* Öğeler arası boşluk */
+    justify-content: center; /* Ortaya hizalar */
+}
+ 
+.otel-item {
+    background-color: rgb(172, 255, 255); /* Arka plan */
+    border-bottom-left-radius: 80%; /* Sol alt köşeyi yuvarlar */
+    border-top-right-radius: 40%; /* Sağ üst köşeyi yuvarlar */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Gölge efekti */
+    width: 300px; /* Genişlik ayarı */
+    padding: 15px; /* İç boşluk */
+    transition: transform 0.3s; /* Hover animasyonu */
+    position: relative; /* Tag etiketi için referans */
+}
+ 
+.otel-item:hover {
+    transform: scale(1.03); /* Üzerine gelince hafif büyütme */
+}
+ 
+.otel-item img {
+    width: 100%; /* Resmi kutuya sığdırır */
+    margin-bottom: 15px; /* Alt boşluk */
+}
+ 
+.otel-item h3 {
+    font-size: 1.5em; /* Başlık boyutu */
+    margin-bottom: 10px; /* Alt boşluk */
+    color: #003366;
+}
+ 
+.otel-item p {
+    font-size: 0.95em; /* Yazı boyutu */
+    margin-bottom: 10px; /* Alt boşluk */
+    color: #555; /* Açık gri yazı rengi */
+}
+ 
+.otel-item span {
+    font-weight: bold; /* Kalın yazı */
+    font-size: 1.1em; /* Yazı boyutu */
+    display: block; /* Yeni satıra geçer */
+    margin-bottom: 10px; /* Alt boşluk */
+    color: #006064; /* Yazı rengi */
+}
+ 
+button.reservation,
+button.reservation-button {
+    padding: 10px 20px; /* Buton iç boşluk */
+    background-color: #ffcc00; /*arka plan */
+    border: none; /* Kenarlık yok */
+    cursor: pointer; /* İmleç değişimi */
+    font-weight: bold; /* Kalın yazı */
+    transition: background-color 0.3s; /* Geçiş efekti */
+}
+ 
+button.reservation:hover,
+button.reservation-button:hover {
+    background-color: #e6b800; /* hover efekti */
+}
+ 
+.tag {
+    position: absolute; /* Konum sabitlenir */
+    top: 10px; /* Yukarıdan 10px */
+    right: 10px; /* Sağdan 10px */
+    background-color: #fdfb87; /* Arka plan */
+    padding: 5px 10px; /* İç boşluk */
+ 
+}
+ 
+.reservation-form {
+    background-color: #f2f3dd; /* Arka plan */
+    padding: 40px; /* İç boşluk */
+    width: 80%; /* Sayfanın %80’i kadar genişlik */
+    margin: auto; /* Ortalanır */
+}
+ 
+.reservation-form form {
+    display: flex; /* Formu esnek kutu yapar */
+    flex-direction: column; /* Dikey hizalama */
+    gap: 15px; /* Elemanlar arası boşluk */
+}
+ 
+.reservation-form input,
+.reservation-form select {
+    padding: 10px; /* İç boşluk */
+    font-size: 16px; /* Yazı boyutu */
+    border-radius: 5px; /* Köşeleri yuvarlatır */
+    border: 1px solid rgb(34, 2, 107); /* Kenarlık rengi ve kalınlığı */
+}
+ 
+.reservation-form button {
+    width: 180px;
+    align-self: center; /* Ortalanır */
+    padding: 10px 25px; /* İç boşluk */
+    background-color: #00796b; /* Arka plan */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenarlık yok */
+    font-weight: bold; /* Kalın yazı */
+    cursor: pointer; /* El işareti çıkar */
+}
+ 
+.reservation-form button:hover {
+    background-color: #004d40; /* Hover efekti */
+}
+ 
+footer {
+    background-color: #003366; /* Arka plan */
+    color: #fff; /* Yazı rengi */
+    text-align: center; /* Ortalanmış metin */
+    padding: 15px; /* İç boşluk */
+}
+ 

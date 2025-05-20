@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Otel Rezervasyon Sistemi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Otel Rezervasyon</h1>
+    <nav>
+      <ul>
+        <li><a href="#anasayfa">Anasayfa</a></li>
+        <li><a href="#oteller">Oteller</a></li>
+        <li><a href="#rezervasyon">Rezervasyon</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="search-container" id="anasayfa">
+    <h2>Hayalinizdeki Oteli Bulun</h2>
+    <input type="text" placeholder="Şehir veya otel adı yazın..." />
+    <button id="aramabutonu">Ara</button>
+  </section>
+
+  <section class="hero">
+    <h2>En İyi Oteller, En Uygun Fiyatlar</h2>
+    <p>Konforlu ve keyifli bir tatil için hemen rezervasyon yapın.</p>
+    <a href="#rezervasyon" class="button">Rezervasyon Yap</a>
+  </section>
+
+  <section id="oteller">
+    <h2>Popüler Otellerimiz</h2>
+    <div class="otel-items">
+      <div class="otel-item">
+        <img src="img/hotel1.jpg" alt="Otel 1" />
+        <h3>Deniz Manzaralı Otel</h3>
+        <p>Harika deniz manzarası ve konforlu odalar.</p>
+        <span>Fiyat: 500 TL / gece</span>
+        <button class="reservation">Rezervasyon Yap</button>
+        <div class="tag">Popüler</div>
+      </div>
+
+      <div class="otel-item">
+        <img src="img/hotel2.jpg" alt="Otel 2" />
+        <h3>Şehir Merkezinde Otel</h3>
+        <p>Şehrin kalbinde, kolay ulaşım.</p>
+        <span>Fiyat: 400 TL / gece</span>
+        <button class="reservation">Rezervasyon Yap</button>
+      </div>
+
+      <div class="otel-item">
+        <img src="img/hotel3.jpg" alt="Otel 3" />
+        <h3>Doğa ile İç İçe Otel</h3>
+        <p>Sakin ve huzurlu bir tatil için ideal.</p>
+        <span>Fiyat: 450 TL / gece</span>
+        <button class="reservation">Rezervasyon Yap</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservation-form" id="rezervasyon">
+    <h2>Rezervasyon Formu</h2>
+    <form>
+      <label for="ad">Adınız:</label>
+      <input type="text" id="ad" name="ad" required />
+
+      <label for="soyad">Soyadınız:</label>
+      <input type="text" id="soyad" name="soyad" required />
+
+      <label for="otel">Otel Seçiniz:</label>
+      <select id="otel" name="otel" required>
+        <option value="">-- Otel Seçiniz --</option>
+        <option value="deniz">Deniz Manzaralı Otel</option>
+        <option value="sehir">Şehir Merkezinde Otel</option>
+        <option value="dogal">Doğa ile İç İçe Otel</option>
+      </select>
+
+      <label for="giris">Giriş Tarihi:</label>
+      <input type="date" id="giris" name="giris" required />
+
+      <label for="cikis">Çıkış Tarihi:</label>
+      <input type="date" id="cikis" name="cikis" required />
+
+      <button type="submit">Rezervasyonu Tamamla</button>
+    </form>
+  </section>
+
+  <footer id="iletisim">
+    <p>&copy; 2025 Otel Rezervasyon Sistemi. Tüm hakları saklıdır.</p>
+  </footer>
+
+</body>
+</html>
